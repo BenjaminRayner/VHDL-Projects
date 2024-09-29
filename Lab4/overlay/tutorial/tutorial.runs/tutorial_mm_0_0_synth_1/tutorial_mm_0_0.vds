@@ -1,0 +1,828 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul 25 20:41:20 2022
+# Process ID: 30129
+# Current directory: /home/nachiket/brayner-lab4/overlay/tutorial/tutorial.runs/tutorial_mm_0_0_synth_1
+# Command line: vivado -log tutorial_mm_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tutorial_mm_0_0.tcl
+# Log file: /home/nachiket/brayner-lab4/overlay/tutorial/tutorial.runs/tutorial_mm_0_0_synth_1/tutorial_mm_0_0.vds
+# Journal file: /home/nachiket/brayner-lab4/overlay/tutorial/tutorial.runs/tutorial_mm_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source tutorial_mm_0_0.tcl -notrace
+Command: synth_design -top tutorial_mm_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30224 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00.89 ; elapsed = 00:00:01 . Memory (MB): peak = 1390.281 ; gain = 0.000 ; free physical = 9619 ; free virtual = 16097
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tutorial_mm_0_0' [/home/nachiket/brayner-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_mm_0_0/synth/tutorial_mm_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'mm_axi' [/home/nachiket/brayner-lab4/mm_axi.v:2]
+	Parameter M bound to: 4 - type: integer 
+	Parameter N1 bound to: 4 - type: integer 
+	Parameter N2 bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mm' [/home/nachiket/brayner-lab4/mm.sv:3]
+	Parameter M bound to: 4 - type: integer 
+	Parameter N1 bound to: 4 - type: integer 
+	Parameter N2 bound to: 4 - type: integer 
+	Parameter D_W bound to: 8 - type: integer 
+	Parameter D_W_ACC bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 's2mm' [/home/nachiket/brayner-lab4/s2mm.sv:3]
+	Parameter M bound to: 4 - type: integer 
+	Parameter N1 bound to: 4 - type: integer 
+	Parameter N2 bound to: 4 - type: integer 
+	Parameter D_W bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mem' [/home/nachiket/brayner-lab4/mem.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mem' (1#1) [/home/nachiket/brayner-lab4/mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_read_A' [/home/nachiket/brayner-lab4/mem_read_A.sv:1]
+	Parameter D_W bound to: 8 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mem_read_A' (2#1) [/home/nachiket/brayner-lab4/mem_read_A.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_read_B' [/home/nachiket/brayner-lab4/mem_read_B.sv:1]
+	Parameter D_W bound to: 8 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mem_read_B' (3#1) [/home/nachiket/brayner-lab4/mem_read_B.sv:1]
+WARNING: [Synth 8-6014] Unused sequential element ram_A[0].reg_banked_ready_A_reg[0] was removed.  [/home/nachiket/brayner-lab4/s2mm.sv:85]
+WARNING: [Synth 8-6014] Unused sequential element ram_A[1].reg_banked_ready_A_reg[1] was removed.  [/home/nachiket/brayner-lab4/s2mm.sv:95]
+WARNING: [Synth 8-6014] Unused sequential element ram_A[2].reg_banked_ready_A_reg[2] was removed.  [/home/nachiket/brayner-lab4/s2mm.sv:95]
+WARNING: [Synth 8-6014] Unused sequential element ram_A[3].reg_banked_ready_A_reg[3] was removed.  [/home/nachiket/brayner-lab4/s2mm.sv:95]
+WARNING: [Synth 8-6014] Unused sequential element ram_B[0].reg_banked_ready_B_reg[0] was removed.  [/home/nachiket/brayner-lab4/s2mm.sv:143]
+WARNING: [Synth 8-6014] Unused sequential element ram_B[1].reg_banked_ready_B_reg[1] was removed.  [/home/nachiket/brayner-lab4/s2mm.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element ram_B[2].reg_banked_ready_B_reg[2] was removed.  [/home/nachiket/brayner-lab4/s2mm.sv:153]
+WARNING: [Synth 8-6014] Unused sequential element ram_B[3].reg_banked_ready_B_reg[3] was removed.  [/home/nachiket/brayner-lab4/s2mm.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 's2mm' (4#1) [/home/nachiket/brayner-lab4/s2mm.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mm2s' [/home/nachiket/brayner-lab4/mm2s.sv:3]
+	Parameter M bound to: 4 - type: integer 
+	Parameter N1 bound to: 4 - type: integer 
+	Parameter N2 bound to: 4 - type: integer 
+	Parameter D_W_ACC bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mem__parameterized0' [/home/nachiket/brayner-lab4/mem.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mem__parameterized0' (4#1) [/home/nachiket/brayner-lab4/mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_write' [/home/nachiket/brayner-lab4/mem_write.sv:1]
+	Parameter D_W bound to: 16 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mem_write' (5#1) [/home/nachiket/brayner-lab4/mem_write.sv:1]
+WARNING: [Synth 8-6014] Unused sequential element done_multiply_r_reg was removed.  [/home/nachiket/brayner-lab4/mm2s.sv:145]
+WARNING: [Synth 8-6014] Unused sequential element done_multiply_r1_reg was removed.  [/home/nachiket/brayner-lab4/mm2s.sv:146]
+INFO: [Synth 8-6155] done synthesizing module 'mm2s' (6#1) [/home/nachiket/brayner-lab4/mm2s.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'systolic' [/home/nachiket/brayner-lab4/systolic.sv:3]
+	Parameter D_W bound to: 8 - type: integer 
+	Parameter D_W_ACC bound to: 16 - type: integer 
+	Parameter N1 bound to: 4 - type: integer 
+	Parameter N2 bound to: 4 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pe' [/home/nachiket/brayner-lab4/pe.v:3]
+	Parameter D_W_ACC bound to: 16 - type: integer 
+	Parameter D_W bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pe' (7#1) [/home/nachiket/brayner-lab4/pe.v:3]
+INFO: [Synth 8-6157] synthesizing module 'control' [/home/nachiket/brayner-lab4/control.v:3]
+	Parameter N1 bound to: 4 - type: integer 
+	Parameter N2 bound to: 4 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+	Parameter D_W bound to: 8 - type: integer 
+	Parameter D_W_ACC bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counter' [/home/nachiket/brayner-lab4/counter.v:1]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter HEIGHT bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (8#1) [/home/nachiket/brayner-lab4/counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'control' (9#1) [/home/nachiket/brayner-lab4/control.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'systolic' (10#1) [/home/nachiket/brayner-lab4/systolic.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'mm' (11#1) [/home/nachiket/brayner-lab4/mm.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'mm_axi' (12#1) [/home/nachiket/brayner-lab4/mm_axi.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'tutorial_mm_0_0' (13#1) [/home/nachiket/brayner-lab4/overlay/tutorial/tutorial.srcs/sources_1/bd/tutorial/ip/tutorial_mm_0_0/synth/tutorial_mm_0_0.v:58]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[31]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[30]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[29]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[28]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[27]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[26]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[25]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[24]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[23]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[22]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[21]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[20]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[19]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[18]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[17]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[16]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[15]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[14]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[13]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[12]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[11]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[10]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[9]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tdata[8]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tkeep[3]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tkeep[2]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tkeep[1]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tkeep[0]
+WARNING: [Synth 8-3331] design s2mm has unconnected port s_axis_s2mm_tlast
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1434.953 ; gain = 44.672 ; free physical = 9614 ; free virtual = 16093
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin mm_inst:s_axis_s2mm_tkeep[3] to constant 0 [/home/nachiket/brayner-lab4/mm_axi.v:36]
+WARNING: [Synth 8-3295] tying undriven pin mm_inst:s_axis_s2mm_tkeep[2] to constant 0 [/home/nachiket/brayner-lab4/mm_axi.v:36]
+WARNING: [Synth 8-3295] tying undriven pin mm_inst:s_axis_s2mm_tkeep[1] to constant 0 [/home/nachiket/brayner-lab4/mm_axi.v:36]
+WARNING: [Synth 8-3295] tying undriven pin mm_inst:s_axis_s2mm_tkeep[0] to constant 0 [/home/nachiket/brayner-lab4/mm_axi.v:36]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1434.953 ; gain = 44.672 ; free physical = 9607 ; free virtual = 16086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1434.953 ; gain = 44.672 ; free physical = 9607 ; free virtual = 16086
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1954.027 ; gain = 0.000 ; free physical = 9207 ; free virtual = 15686
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1954.027 ; gain = 0.000 ; free physical = 9206 ; free virtual = 15686
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1956.027 ; gain = 2.000 ; free physical = 9203 ; free virtual = 15682
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 9235 ; free virtual = 15715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 9237 ; free virtual = 15716
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 9243 ; free virtual = 15723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "start_multiply" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "done_multiply_fclk" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "last_beat0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wrapped" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "init_pe_reg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "patch" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 9244 ; free virtual = 15724
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 6     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 56    
+	                8 Bit    Registers := 40    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 13    
+	                1 Bit    Registers := 63    
++---RAMs : 
+	              128 Bit         RAMs := 8     
+	               64 Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 35    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mem_read_A 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
+Module mem_read_B 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
+Module mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              128 Bit         RAMs := 1     
+Module s2mm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                5 Bit    Registers := 9     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mem_write 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	                2 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module mem__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---RAMs : 
+	               64 Bit         RAMs := 1     
+Module mm2s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module pe 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module systolic 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module mm 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'inst/mm_inst/s2mm_inst/mem_read_B_inst/genblk1[1].rd_en_bram_reg_reg[1:1]' into 'inst/mm_inst/s2mm_inst/mem_read_A_inst/genblk1[1].rd_en_bram_reg_reg[1:1]' [/home/nachiket/brayner-lab4/mem_read_B.sv:30]
+INFO: [Synth 8-4471] merging register 'inst/mm_inst/s2mm_inst/mem_read_B_inst/genblk1[2].rd_en_bram_reg_reg[2:2]' into 'inst/mm_inst/s2mm_inst/mem_read_A_inst/genblk1[2].rd_en_bram_reg_reg[2:2]' [/home/nachiket/brayner-lab4/mem_read_B.sv:30]
+INFO: [Synth 8-4471] merging register 'inst/mm_inst/s2mm_inst/mem_read_B_inst/genblk1[3].rd_en_bram_reg_reg[3:3]' into 'inst/mm_inst/s2mm_inst/mem_read_A_inst/genblk1[3].rd_en_bram_reg_reg[3:3]' [/home/nachiket/brayner-lab4/mem_read_B.sv:30]
+INFO: [Synth 8-4471] merging register 'inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/pipe_data_reg[15:0]' into 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[15:0]' [/home/nachiket/brayner-lab4/pe.v:36]
+INFO: [Synth 8-4471] merging register 'inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/pipe_valid_reg' into 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg' [/home/nachiket/brayner-lab4/pe.v:37]
+INFO: [Synth 8-4471] merging register 'inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/pipe_data_reg[15:0]' into 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[15:0]' [/home/nachiket/brayner-lab4/pe.v:36]
+INFO: [Synth 8-4471] merging register 'inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/pipe_valid_reg' into 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg' [/home/nachiket/brayner-lab4/pe.v:37]
+INFO: [Synth 8-4471] merging register 'inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/pipe_data_reg[15:0]' into 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[15:0]' [/home/nachiket/brayner-lab4/pe.v:36]
+INFO: [Synth 8-4471] merging register 'inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/pipe_valid_reg' into 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg' [/home/nachiket/brayner-lab4/pe.v:37]
+INFO: [Synth 8-5544] ROM "inst/mm_inst/systolic_inst/wrapped" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst/mm_inst/patch" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A2*B2.
+DSP Report: register inst/mm_inst/s2mm_inst/ram_B[0].read_ram_B/doutB_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/s2mm_inst/ram_A[0].read_ram_A/doutB_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A2*B2.
+DSP Report: register inst/mm_inst/s2mm_inst/ram_B[1].read_ram_B/doutB_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A''*B2.
+DSP Report: register inst/mm_inst/s2mm_inst/ram_B[2].read_ram_B/doutB_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+ACIN2*B2.
+DSP Report: register inst/mm_inst/s2mm_inst/ram_B[3].read_ram_B/doutB_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A2*B2.
+DSP Report: register inst/mm_inst/s2mm_inst/ram_A[1].read_ram_A/doutB_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A2*B2.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A''*B2.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+ACIN2*B2.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A2*B''.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/s2mm_inst/ram_A[2].read_ram_A/doutB_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[0].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A2*B''.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[1].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[1].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A''*B''.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[2].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+ACIN2*B''.
+DSP Report: register inst/mm_inst/systolic_inst/row[0].col[3].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A2*BCIN2.
+DSP Report: register inst/mm_inst/s2mm_inst/ram_A[3].read_ram_A/doutB_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[0].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A2*BCIN2.
+DSP Report: register inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[1].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+ACIN''*B''.
+DSP Report: register inst/mm_inst/systolic_inst/row[3].col[0].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[2].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[2].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/accum_reg.
+DSP Report: Generating DSP inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum_reg, operation Mode is: ((C:0x0) or P)+A''*BCIN''.
+DSP Report: register inst/mm_inst/systolic_inst/row[1].col[3].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[2].col[3].pe_inst/out_b_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[3].col[1].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[3].col[2].pe_inst/out_a_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum_reg.
+DSP Report: register inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum_reg is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum_reg.
+DSP Report: operator inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum0 is absorbed into DSP inst/mm_inst/systolic_inst/row[3].col[3].pe_inst/accum_reg.
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[31] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[30] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[29] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[28] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[27] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[26] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[25] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[24] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[23] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[22] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[21] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[20] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[19] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[18] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[17] driven by constant 0
+INFO: [Synth 8-3917] design tutorial_mm_0_0 has port y_TDATA[16] driven by constant 0
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[31]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[30]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[29]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[28]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[27]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[26]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[25]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[24]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[23]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[22]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[21]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[20]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[19]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[18]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[17]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[16]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[15]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[14]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[13]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[12]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[11]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[10]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[9]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TDATA[8]
+WARNING: [Synth 8-3331] design tutorial_mm_0_0 has unconnected port x_TLAST[0]
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[4]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[5]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[2]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[3]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[0]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[1]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[10]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[11]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[8]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[9]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[6]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[7]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[14]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[15]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[12]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3886] merging instance 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_data_reg[13]' (FDR) to 'inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/mm_inst/systolic_inst/row[0].col[0].pe_inst/pipe_valid_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 9215 ; free virtual = 15697
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------+-----------------------------------------------------+-----------+----------------------+--------------+
+|Module Name     | RTL Object                                          | Inference | Size (Depth x Width) | Primitives   | 
++----------------+-----------------------------------------------------+-----------+----------------------+--------------+
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_A[0].read_ram_A/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_B[0].read_ram_B/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_B[1].read_ram_B/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_B[2].read_ram_B/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_B[3].read_ram_B/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/mm2s_inst/ram_D[0].write_ram_D/mem_reg | Implied   | 4 x 16               | RAM32M x 3   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_A[1].read_ram_A/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/mm2s_inst/ram_D[1].write_ram_D/mem_reg | Implied   | 4 x 16               | RAM32M x 3   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_A[2].read_ram_A/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/mm2s_inst/ram_D[2].write_ram_D/mem_reg | Implied   | 4 x 16               | RAM32M x 3   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_A[3].read_ram_A/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/mm2s_inst/ram_D[3].write_ram_D/mem_reg | Implied   | 4 x 16               | RAM32M x 3   | 
++----------------+-----------------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping               | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|tutorial_mm_0_0 | ((C:0x0) or P)+A2*B2      | 8      | 8      | 16     | -      | 16     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A2*B2      | 8      | 8      | 16     | -      | 16     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A''*B2     | 8      | 8      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+ACIN2*B2   | 8      | 8      | 16     | -      | 16     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A2*B2      | 8      | 8      | 16     | -      | 16     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A2*B2      | 8      | 8      | 16     | -      | 16     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A''*B2     | 8      | 8      | 16     | -      | 16     | 2    | 1    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+ACIN2*B2   | 8      | 8      | 16     | -      | 16     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A2*B''     | 8      | 8      | 16     | -      | 16     | 1    | 2    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A2*B''     | 8      | 8      | 16     | -      | 16     | 1    | 2    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A''*B''    | 8      | 8      | 16     | -      | 16     | 2    | 2    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+ACIN2*B''  | 8      | 8      | 16     | -      | 16     | 1    | 2    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A2*BCIN2   | 8      | 8      | 16     | -      | 16     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A2*BCIN2   | 8      | 8      | 16     | -      | 16     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+ACIN''*B'' | 8      | 8      | 16     | -      | 16     | 2    | 2    | 0    | -    | -     | 0    | 1    | 
+|tutorial_mm_0_0 | ((C:0x0) or P)+A''*BCIN'' | 8      | 8      | 16     | -      | 16     | 2    | 2    | 0    | -    | -     | 0    | 1    | 
++----------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8906 ; free virtual = 15391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8905 ; free virtual = 15390
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++----------------+-----------------------------------------------------+-----------+----------------------+--------------+
+|Module Name     | RTL Object                                          | Inference | Size (Depth x Width) | Primitives   | 
++----------------+-----------------------------------------------------+-----------+----------------------+--------------+
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_A[0].read_ram_A/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_B[0].read_ram_B/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_B[1].read_ram_B/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_B[2].read_ram_B/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_B[3].read_ram_B/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/mm2s_inst/ram_D[0].write_ram_D/mem_reg | Implied   | 4 x 16               | RAM32M x 3   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_A[1].read_ram_A/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/mm2s_inst/ram_D[1].write_ram_D/mem_reg | Implied   | 4 x 16               | RAM32M x 3   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_A[2].read_ram_A/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/mm2s_inst/ram_D[2].write_ram_D/mem_reg | Implied   | 4 x 16               | RAM32M x 3   | 
+|tutorial_mm_0_0 | inst/mm_inst/s2mm_inst/ram_A[3].read_ram_A/mem_reg  | Implied   | 4 x 8                | RAM32M x 6   | 
+|tutorial_mm_0_0 | inst/mm_inst/mm2s_inst/ram_D[3].write_ram_D/mem_reg | Implied   | 4 x 16               | RAM32M x 3   | 
++----------------+-----------------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/mem.v:40]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [/home/nachiket/brayner-lab4/pe.v:31]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8893 ; free virtual = 15379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8852 ; free virtual = 15337
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8851 ; free virtual = 15337
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8845 ; free virtual = 15330
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8845 ; free virtual = 15330
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8842 ; free virtual = 15327
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8840 ; free virtual = 15326
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |DSP48E1    |     4|
+|2     |DSP48E1_1  |     2|
+|3     |DSP48E1_10 |     1|
+|4     |DSP48E1_2  |     2|
+|5     |DSP48E1_3  |     2|
+|6     |DSP48E1_4  |     1|
+|7     |DSP48E1_5  |     1|
+|8     |DSP48E1_6  |     2|
+|9     |DSP48E1_9  |     1|
+|10    |LUT1       |     8|
+|11    |LUT2       |    88|
+|12    |LUT3       |   252|
+|13    |LUT4       |    20|
+|14    |LUT5       |     5|
+|15    |LUT6       |     2|
+|16    |RAM32M     |    28|
+|17    |FDRE       |   856|
++------+-----------+------+
+
+Report Instance Areas: 
++------+--------------------------------+-----------------------+------+
+|      |Instance                        |Module                 |Cells |
++------+--------------------------------+-----------------------+------+
+|1     |top                             |                       |  1275|
+|2     |  inst                          |mm_axi                 |  1273|
+|3     |    mm_inst                     |mm                     |  1273|
+|4     |      mm2s_inst                 |mm2s                   |   257|
+|5     |        mem_write_D             |mem_write              |    17|
+|6     |        \ram_D[0].write_ram_D   |mem__parameterized0    |    19|
+|7     |        \ram_D[1].write_ram_D   |mem__parameterized0_23 |    19|
+|8     |        \ram_D[2].write_ram_D   |mem__parameterized0_24 |    19|
+|9     |        \ram_D[3].write_ram_D   |mem__parameterized0_25 |    19|
+|10    |      s2mm_inst                 |s2mm                   |   233|
+|11    |        mem_read_A_inst         |mem_read_A             |    10|
+|12    |        mem_read_B_inst         |mem_read_B             |     6|
+|13    |        \ram_A[0].read_ram_A    |mem                    |    11|
+|14    |        \ram_A[1].read_ram_A    |mem_16                 |    11|
+|15    |        \ram_A[2].read_ram_A    |mem_17                 |    11|
+|16    |        \ram_A[3].read_ram_A    |mem_18                 |    12|
+|17    |        \ram_B[0].read_ram_B    |mem_19                 |    11|
+|18    |        \ram_B[1].read_ram_B    |mem_20                 |    11|
+|19    |        \ram_B[2].read_ram_B    |mem_21                 |    11|
+|20    |        \ram_B[3].read_ram_B    |mem_22                 |    11|
+|21    |      systolic_inst             |systolic               |   782|
+|22    |        control_inst            |control                |     9|
+|23    |          counter_A             |counter                |     5|
+|24    |          counter_B             |counter_15             |     4|
+|25    |        \row[0].col[0].pe_inst  |pe                     |    34|
+|26    |        \row[0].col[1].pe_inst  |pe_0                   |    52|
+|27    |        \row[0].col[2].pe_inst  |pe_1                   |    52|
+|28    |        \row[0].col[3].pe_inst  |pe_2                   |    53|
+|29    |        \row[1].col[0].pe_inst  |pe_3                   |    34|
+|30    |        \row[1].col[1].pe_inst  |pe_4                   |    52|
+|31    |        \row[1].col[2].pe_inst  |pe_5                   |    52|
+|32    |        \row[1].col[3].pe_inst  |pe_6                   |    53|
+|33    |        \row[2].col[0].pe_inst  |pe_7                   |    34|
+|34    |        \row[2].col[1].pe_inst  |pe_8                   |    52|
+|35    |        \row[2].col[2].pe_inst  |pe_9                   |    52|
+|36    |        \row[2].col[3].pe_inst  |pe_10                  |    53|
+|37    |        \row[3].col[0].pe_inst  |pe_11                  |    34|
+|38    |        \row[3].col[1].pe_inst  |pe_12                  |    52|
+|39    |        \row[3].col[2].pe_inst  |pe_13                  |    52|
+|40    |        \row[3].col[3].pe_inst  |pe_14                  |    53|
++------+--------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8839 ; free virtual = 15325
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1956.027 ; gain = 44.672 ; free physical = 8888 ; free virtual = 15374
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1956.027 ; gain = 565.746 ; free physical = 8888 ; free virtual = 15374
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 44 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1956.027 ; gain = 0.000 ; free physical = 8823 ; free virtual = 15308
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 28 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+121 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1956.027 ; gain = 565.824 ; free physical = 8879 ; free virtual = 15365
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1956.027 ; gain = 0.000 ; free physical = 8879 ; free virtual = 15365
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/nachiket/brayner-lab4/overlay/tutorial/tutorial.runs/tutorial_mm_0_0_synth_1/tutorial_mm_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 39 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1956.027 ; gain = 0.000 ; free physical = 8908 ; free virtual = 15395
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/nachiket/brayner-lab4/overlay/tutorial/tutorial.runs/tutorial_mm_0_0_synth_1/tutorial_mm_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tutorial_mm_0_0_utilization_synth.rpt -pb tutorial_mm_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 25 20:41:39 2022...

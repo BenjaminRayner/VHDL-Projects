@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1658781824">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="tutorial_wrapper.drc"/>
+  <File Type="BG-BGN" Name="tutorial_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="tutorial_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="tutorial_wrapper.ltx"/>
+  <File Type="BITSTR-MMI" Name="tutorial_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="tutorial_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="tutorial_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="tutorial_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="tutorial_wrapper.msk"/>
+  <File Type="BG-BIN" Name="tutorial_wrapper.bin"/>
+  <File Type="BG-BIT" Name="tutorial_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="tutorial_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="tutorial_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="tutorial_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="tutorial_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="tutorial_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="tutorial_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="tutorial_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="tutorial_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tutorial_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="tutorial_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="tutorial_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="tutorial_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="tutorial_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="tutorial_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tutorial_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="tutorial_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="tutorial_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="tutorial_wrapper_power_routed.rpx"/>
+  <File Type="PLACE-UTIL-PB" Name="tutorial_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="tutorial_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="tutorial_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="tutorial_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="tutorial_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="tutorial_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="tutorial_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="tutorial_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="tutorial_wrapper.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="tutorial_wrapper_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="tutorial_wrapper_reports.tcl"/>
+  <File Type="PWROPT-DRC" Name="tutorial_wrapper_drc_pwropted.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="tutorial_wrapper_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="tutorial_wrapper.tcl"/>
+  <File Type="INIT-TIMING" Name="tutorial_wrapper_timing_summary_init.rpt"/>
+  <File Type="PLACE-CTRL" Name="tutorial_wrapper_control_sets_placed.rpt"/>
+  <File Type="PWROPT-TIMING" Name="tutorial_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tutorial_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-DCP" Name="tutorial_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="tutorial_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="tutorial_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-TIMING" Name="tutorial_wrapper_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="tutorial_wrapper_drc_routed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="tutorial_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="tutorial_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="tutorial_wrapper_drc_routed.pb"/>
+  <File Type="PHYSOPT-DCP" Name="tutorial_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="tutorial_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="tutorial_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-PWR" Name="tutorial_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="tutorial_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="tutorial_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DCP" Name="tutorial_wrapper_routed.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tutorial_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="tutorial_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="tutorial_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="tutorial_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="tutorial_wrapper_power_summary_routed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../pe.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mem_read_A.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mem_read_B.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mem_write.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mm.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mm2s.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../s2mm.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../systolic.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mm_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/tutorial/tutorial.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/tutorial/hdl/tutorial_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../pipe.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tutorial_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../lab4.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_mm_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_auto_us_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_s00_mmu_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_s01_mmu_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_axi_dma_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_rst_processing_system7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_auto_us_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="tutorial_auto_pc_1"/>
+</GenRun>

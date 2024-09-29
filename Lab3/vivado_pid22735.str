@@ -1,0 +1,159 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 22735
+License: Customer
+
+Current time: 	Thu Jul 14 04:43:10 UTC 2022
+Time zone: 	Coordinated Universal Time (Etc/UTC)
+
+OS: Ubuntu
+OS Version: 5.10.16.3-microsoft-standard-WSL2
+OS Architecture: amd64
+Available processors (cores): 32
+
+Display: host.docker.internal:0
+Screen size: 3840x2160
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 205 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	nachiket
+User home directory: /home/nachiket
+User working directory: /home/nachiket/brayner-lab3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2018.3
+RDI_DATADIR: /opt/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: /home/nachiket/.Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: /home/nachiket/.Xilinx/Vivado/2018.3/
+Vivado layouts directory: /home/nachiket/.Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	/home/nachiket/brayner-lab3/vivado.log
+Vivado journal file location: 	/home/nachiket/brayner-lab3/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-22735-665df260f038
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: /opt/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2018.3
+XILINX_VIVADO: /opt/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	198 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,057 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// bx (cp):  Sourcing Tcl script 'lab3-syn.tcl' : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: source lab3-syn.tcl 
+// Tcl Message: # create_project -force lab3 ./lab3_vivado -part xc7z020clg400-1 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 85 MB (+86845kb) [00:00:04]
+// [Engine Memory]: 994 MB (+891075kb) [00:00:04]
+// [GUI Memory]: 99 MB (+9690kb) [00:00:04]
+// [Engine Memory]: 1,047 MB (+3572kb) [00:00:05]
+// WARNING: HEventQueue.dispatchEvent() is taking  1196 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 108 MB (+4927kb) [00:00:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: # set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project] # add_files systolic.sv pe.v counter.v pipe.sv control.v # update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: # set_property top systolic [current_fileset] # set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1] # set_property generic {N=4 M=8} [current_fileset] # launch_runs synth_1 -jobs 4 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,025 MB. GUI used memory: 46 MB. Current time: 7/14/22, 4:43:12 AM UTC
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jul 14 04:43:13 2022] Launched synth_1... Run output will be captured here: /home/nachiket/brayner-lab3/lab3_vivado/lab3.runs/synth_1/runme.log 
+// Tcl Message: # wait_on_run synth_1 
+// Tcl Message: [Thu Jul 14 04:43:13 2022] Waiting for synth_1 to finish... 
+// Tcl Message: [Thu Jul 14 04:43:18 2022] Waiting for synth_1 to finish... 
+// Tcl Message: [Thu Jul 14 04:43:23 2022] Waiting for synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Thu Jul 14 04:43:28 2022] Waiting for synth_1 to finish... 
+// Tcl Message: [Thu Jul 14 04:43:28 2022] synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 6498.582 ; gain = 0.000 ; free physical = 11437 ; free virtual = 17876 
+// Tcl Message: # open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,281 MB. GUI used memory: 47 MB. Current time: 7/14/22, 4:43:31 AM UTC
+// [Engine Memory]: 1,323 MB (+234319kb) [00:00:26]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,496 MB (+112049kb) [00:00:27]
+// Device: addNotify
+// [GUI Memory]: 115 MB (+1296kb) [00:00:27]
+// [GUI Memory]: 129 MB (+8622kb) [00:00:27]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1247 ms.
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6740.016 ; gain = 0.000 ; free physical = 11169 ; free virtual = 17608 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// Tcl Message: # report_utilization -file utilization.txt # source grade.tcl ## set GRADE 0 # if { $GRADE == 1 } { #   exit # } 
+dismissDialog("Sourcing Tcl script 'lab3-syn.tcl'"); // bx (cp)
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 1,580 MB (+8883kb) [00:00:32]
+// [GUI Memory]: 136 MB (+183kb) [00:00:33]
+// RouteApi::initDelayMediator elapsed time: 4.6s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 1,822 MB (+170907kb) [00:00:33]
